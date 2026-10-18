@@ -1,103 +1,70 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f9f4;
-    color: #1f2d1a;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — CLEAN UGANDA INITIATIVE</title>
+  <meta name="description" content="Contact Clean Uganda Initiative to volunteer or get more information.">
+  <link rel="stylesheet" href="en/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img class="logo" src="en/images/jj.png" alt="Clean Uganda Initiative logo">
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="participate.html">How to participate</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-header {
-    background: #2e8b57;
-    color: white;
-    padding: 20px 10px 10px;
-    text-align: center;
-}
+  <main>
+    <section class="container">
+      <h1>Contact us</h1>
+      <p style="text-align:center; max-width:700px; margin:0 auto 20px;">Fill in the form below to register as a volunteer or request information about local cleanups.</p>
 
-header h1 {
-    margin: 0 0 15px;
-    font-size: 2rem;
-}
+      <form class="form" method="post" style="max-width:700px; margin:0 auto;">
+        <label for="name">Name (optional)</label>
+        <input id="name" name="name" type="text" placeholder="Your name">
 
-header img {
-    width: 120px;
-    height: 120px;
-    border-radius: 75px;
-    display: block;
-    margin: 0 auto 15px;
-}
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
+        <label for="district">District</label>
+        <input id="district" name="district" type="text" placeholder="Your district" required>
 
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
+        <label for="activity">Preferred activity</label>
+        <select id="activity" name="activity" required>
+          <option value="sweeping">Sweeping</option>
+          <option value="burning">Burning rubbish</option>
+          <option value="picking">Picking litter</option>
+          <option value="mopping">Mopping</option>
+          <option value="slashing">Slashing grass</option>
+          <option value="other">Other</option>
+        </select>
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+        <div style="text-align:center; margin-top:15px;">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
 
-main {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px 40px;
-}
+      <section style="text-align:center; margin-top:30px;">
+        <h3>Other contact info</h3>
+        <p>TEL: 070798786</p>
+        <p>ADDRESS: Kampala, Uganda</p>
+        <p>EMAIL: clean_initiative_uganda@gmail.com</p>
+      </section>
+    </section>
+  </main>
 
-main h2, main h3 {
-    text-align: center;
-    color: #1c5c32;
-}
-
-main p, main li {
-    line-height: 1.7;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-footer {
-    background: #1d3d2a;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-}
-
-button {
-    background: #7adf5c;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-button a {
-    text-decoration: none;
-    color: #1f2d1a;
-    font-weight: bold;
-}
-
-.form {
-    background: #ffffff;
-    padding: 20px;
-    border: 2px solid #dfeadf;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #c8d7c5;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Clean Initiative Uganda — Tel: 070896545</p>
+    </div>
+  </footer>
+</body>
+</html>
