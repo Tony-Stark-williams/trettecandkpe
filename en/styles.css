@@ -1,70 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact — CLEAN UGANDA INITIATIVE</title>
-  <meta name="description" content="Contact Clean Uganda Initiative to volunteer or get more information.">
-  <link rel="stylesheet" href="en/styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <img class="logo" src="en/images/jj.png" alt="Clean Uganda Initiative logo">
-      <nav class="main-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="participate.html">How to participate</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+body {
+  --accent: #2e8b57;
+  --accent-dark: #1c5c32;
+  --muted: #64786b;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  color: #0f1f12;
+  background: #f6fbf6;
+}
 
-  <main>
-    <section class="container">
-      <h1>Contact us</h1>
-      <p style="text-align:center; max-width:700px; margin:0 auto 20px;">Fill in the form below to register as a volunteer or request information about local cleanups.</p>
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
-      <form class="form" method="post" style="max-width:700px; margin:0 auto;">
-        <label for="name">Name (optional)</label>
-        <input id="name" name="name" type="text" placeholder="Your name">
+.site-header {
+  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+  color: #fff;
+  padding: 18px 0;
+}
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-        <label for="district">District</label>
-        <input id="district" name="district" type="text" placeholder="Your district" required>
+.logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-        <label for="activity">Preferred activity</label>
-        <select id="activity" name="activity" required>
-          <option value="sweeping">Sweeping</option>
-          <option value="burning">Burning rubbish</option>
-          <option value="picking">Picking litter</option>
-          <option value="mopping">Mopping</option>
-          <option value="slashing">Slashing grass</option>
-          <option value="other">Other</option>
-        </select>
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-        <div style="text-align:center; margin-top:15px;">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+.main-nav li {
+  display: inline-block;
+  margin-left: 18px;
+}
 
-      <section style="text-align:center; margin-top:30px;">
-        <h3>Other contact info</h3>
-        <p>TEL: 070798786</p>
-        <p>ADDRESS: Kampala, Uganda</p>
-        <p>EMAIL: clean_initiative_uganda@gmail.com</p>
-      </section>
-    </section>
-  </main>
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© Clean Initiative Uganda — Tel: 070896545</p>
-    </div>
-  </footer>
-</body>
-</html>
+.main-nav a.active {
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url('en/images/hii.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 0;
+}
+
+.hero-inner {
+  text-align: center;
+  background: rgba(0,0,0,0.25);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #06220f;
+  font-weight: 700;
+}
+
+main .intro,
+main .container {
+  padding: 30px 0;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 18px 0;
+}
+
+.form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(16, 52, 38, 0.06);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 12px;
+  border: 1px solid #e6efe6;
+  border-radius: 6px;
+}
+
+button {
+  background: var(--accent);
+  color: #06220f;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.site-footer {
+  background: var(--accent-dark);
+  color: #fff;
+  padding: 18px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  .header-inner { flex-direction: column; gap: 12px; }
+  .main-nav li { display: inline-block; margin-left: 10px; }
+  .hero { padding: 40px 0; }
+  .hero h1 { font-size: 1.4rem; }
+}
