@@ -1,2 +1,141 @@
-# trettecandkpe
-our first website
+body {
+  --accent: #2e8b57;
+  --accent-dark: #1c5c32;
+  --muted: #64786b;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  color: #0f1f12;
+  background: #f6fbf6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+  color: #fff;
+  padding: 18px 0;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-nav a.active {
+  text-decoration: underline;
+}
+
+.hero {
+  background-image: url('en/images/hii.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 0;
+}
+
+.hero-inner {
+  text-align: center;
+  background: rgba(0,0,0,0.25);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #06220f;
+  font-weight: 700;
+}
+
+main .intro,
+main .container {
+  padding: 30px 0;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 18px 0;
+}
+
+.form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(16, 52, 38, 0.06);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 12px;
+  border: 1px solid #e6efe6;
+  border-radius: 6px;
+}
+
+button {
+  background: var(--accent);
+  color: #06220f;
+  border: none;
+  padding: 10px 18px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.site-footer {
+  background: var(--accent-dark);
+  color: #fff;
+  padding: 18px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  .header-inner { flex-direction: column; gap: 12px; }
+  .main-nav li { display: inline-block; margin-left: 10px; }
+  .hero { padding: 40px 0; }
+  .hero h1 { font-size: 1.4rem; }
+}

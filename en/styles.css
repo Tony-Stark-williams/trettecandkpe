@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — CLEAN UGANDA INITIATIVE</title>
+  <meta name="description" content="Contact Clean Uganda Initiative to volunteer or get more information.">
+  <link rel="stylesheet" href="en/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img class="logo" src="en/images/jj.png" alt="Clean Uganda Initiative logo">
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="participate.html">How to participate</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <h1>Contact us</h1>
+      <p style="text-align:center; max-width:700px; margin:0 auto 20px;">Fill in the form below to register as a volunteer or request information about local cleanups.</p>
+
+      <form class="form" method="post" style="max-width:700px; margin:0 auto;">
+        <label for="name">Name (optional)</label>
+        <input id="name" name="name" type="text" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="district">District</label>
+        <input id="district" name="district" type="text" placeholder="Your district" required>
+
+        <label for="activity">Preferred activity</label>
+        <select id="activity" name="activity" required>
+          <option value="sweeping">Sweeping</option>
+          <option value="burning">Burning rubbish</option>
+          <option value="picking">Picking litter</option>
+          <option value="mopping">Mopping</option>
+          <option value="slashing">Slashing grass</option>
+          <option value="other">Other</option>
+        </select>
+
+        <div style="text-align:center; margin-top:15px;">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <section style="text-align:center; margin-top:30px;">
+        <h3>Other contact info</h3>
+        <p>TEL: 070798786</p>
+        <p>ADDRESS: Kampala, Uganda</p>
+        <p>EMAIL: clean_initiative_uganda@gmail.com</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Clean Initiative Uganda — Tel: 070896545</p>
+    </div>
+  </footer>
+</body>
+</html>
