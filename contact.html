@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - CLEAN UGANDA INITIATIVE</title>
-    <link rel="stylesheet" href="en/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="site-header">
@@ -49,9 +49,13 @@
                     </select>
                 </p>
                 <div style="text-align:center;">
-                    <button type="submit" onclick = "clicked(event)" id = "click">Submit Form</button>
-                    <p id = "thanks" style = "color: var(--accent-dark); font-size: larger; font-family: Arial, Helvetica, sans-serif;">type ur message</p>
-                </div>
+    <button type="submit" onclick="clicked(event)" id="click">Submit Form</button>
+    <!-- Added opacity: 0 and transition: opacity 0.5s ease -->
+    <p id="thanks" style="color: var(--accent-dark); font-size: larger; font-family: Arial, Helvetica, sans-serif; opacity: 0; transition: opacity 0.5s ease;">
+        Send us your contact info
+    </p>
+    </div>
+
             </form>
         </section>
 

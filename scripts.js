@@ -1,4 +1,6 @@
 function clicked(event){
     event.preventDefault();
-    document.getElementById("thanks").innerHTML = "Thank you for your submission!";
+    const thanks = document.getElementById("thanks");
+    thanks.style.opacity = "1";
+    thanks.innerHTML = "Thank you for your submission!";
 }
