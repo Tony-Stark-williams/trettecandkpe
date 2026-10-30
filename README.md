@@ -1,2 +1,2 @@
 # trettecandkpe
-our first website
+This is our first website. Clean Uganda Initiative is a

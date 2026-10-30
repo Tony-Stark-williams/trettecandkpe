@@ -5,34 +5,37 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>About — CLEAN UGANDA INITIATIVE</title>
   <meta name="description" content="About Clean Uganda Initiative — history and benefits of national cleaning.">
+  <meta name="theme-color" content="#2e8b57">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-  <div class="container header-inner">
-    <div class="site-brand">
-      <h1>Clean Uganda Initiative</h1>
-      <p class="tagline">Community cleanups for a healthier Uganda</p>
+    <div class="container header-inner">
+      <div class="site-brand">
+        <p class="site-name">Clean Uganda Initiative</p>
+        <p class="tagline">Community cleanups for a healthier Uganda</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active" aria-current="page">About</a></li>
+          <li><a href="participate.html">How to participate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="participate.html">How to participate</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-  <main>
+  <main id="main">
     <section class="container">
       <h1>History of National Cleaning in Uganda</h1>
       <p>National cleaning in Uganda started in 2026 when the Prime Minister called for the last Saturday of every month to be dedicated to cleaning public spaces. Since that declaration, communities across the country have embraced the practice.</p>
 
       <figure class="feature-image">
-        <img src="en/images/clean.jpg" alt="Community cleaning event">
+        <img src="en/images/clean.jpg" alt="Community cleaning event" loading="lazy">
       </figure>
 
       <h2>Health, environmental and economic benefits</h2>
@@ -46,9 +49,10 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© Clean Initiative Uganda — Tel: 070896545</p>
+      <p>© <span data-year>2026</span> Clean Initiative Uganda — Tel: 070896545</p>
     </div>
-    <script src ="scripts.js"></script>
   </footer>
+
+  <script src="scripts.js" defer></script>
 </body>
 </html>

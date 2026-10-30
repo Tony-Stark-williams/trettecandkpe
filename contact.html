@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - CLEAN UGANDA INITIATIVE</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - CLEAN UGANDA INITIATIVE</title>
+  <meta name="description" content="Contact Clean Uganda Initiative to volunteer and sign up for cleaning activities.">
+  <meta name="theme-color" content="#2e8b57">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
-  <div class="container header-inner">
-    <div class="site-brand">
-      <h1>Clean Uganda Initiative</h1>
-      <p class="tagline">Community cleanups for a healthier Uganda</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="site-brand">
+        <p class="site-name">Clean Uganda Initiative</p>
+        <p class="tagline">Community cleanups for a healthier Uganda</p>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="participate.html">How to participate</a></li>
+          <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="participate.html">How to participate</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <main id="main">
+    <div class="container contact-page">
+      <h1>CONTACT US INFORMATION</h1>
+      <p class="contact-intro">
+        For more information about the initiative and to sign up for cleaning activities, please contact us.
+        We welcome volunteers and support community participation across Uganda.
+      </p>
 
-    <main>
-        <h2>CONTACT US INFORMATION</h2>
-        <p style="text-align:center; max-width:700px; margin:0 auto 30px;">
-            For more information about the initiative and to sign up for cleaning activities, please contact us.
-            We welcome volunteers and support community participation across Uganda.
-        </p>
+      <section class="form">
+        <h2>Reach Us On</h2>
+        <form method="post">
+          <p>
+            <label class="sr-only" for="name">Your name (optional)</label>
+            <input type="text" id="name" name="name" placeholder="Your name (optional)" autocomplete="name">
+          </p>
+          <p>
+            <label class="sr-only" for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
+          </p>
+          <p>
+            <label class="sr-only" for="district">District</label>
+            <input type="text" id="district" name="district" placeholder="District" required>
+          </p>
+          <p>
+            <label class="sr-only" for="activity">Activity you would like to help with</label>
+            <select id="activity" name="activity" required>
+              <option value="" disabled selected>Choose an activity</option>
+              <option value="sweeping">Sweeping</option>
+              <option value="burning">Burning rubbish</option>
+              <option value="picking">Picking litter</option>
+              <option value="mopping">Mopping</option>
+              <option value="slashing">Slashing grass</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <div class="form-actions">
+            <button type="submit" id="click">Submit Form</button>
+            <p id="thanks" class="form-status" role="status" aria-live="polite">
+              Send us your contact info
+            </p>
+          </div>
+        </form>
+      </section>
 
-        <section class="form" style="max-width:700px; margin:0 auto;">
-            <h3>Reach Us On</h3>
-            <form method="post">
-                <p><input type="text" name="name" placeholder="Username (optional)"></p>
-                <p><input type="email" name="email" placeholder="Email" required></p>
-                <p><input type="text" name="district" placeholder="District" required></p>
-                <p>
-                    <select name="activity" required>
-                        <option value="sweeping">Sweeping</option>
-                        <option value="burning">Burning rubbish</option>
-                        <option value="picking">Picking litter</option>
-                        <option value="mopping">Mopping</option>
-                        <option value="slashing">Slashing grass</option>
-                        <option value="other">Other</option>
-                    </select>
-                </p>
-                <div style="text-align:center;">
-    <button type="submit" onclick="clicked(event)" id="click">Submit Form</button>
-    <!-- Added opacity: 0 and transition: opacity 0.5s ease -->
-    <p id="thanks" style="color: var(--accent-dark); font-size: larger; font-family: Arial, Helvetica, sans-serif; opacity: 0; transition: opacity 0.5s ease;">
-        Send us your contact info
-    </p>
+      <section class="contact-info">
+        <h2>OUR CONTACT INFORMATION</h2>
+        <p>TEL: 070798786</p>
+        <p>ADDRESS: KAMPALA, UGANDA</p>
+        <p>EMAIL: <a href="mailto:clean_initiative_uganda@gmail.com">clean_initiative_uganda@gmail.com</a></p>
+      </section>
     </div>
+  </main>
 
-            </form>
-        </section>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span data-year>2026</span> Clean Initiative Uganda</p>
+    </div>
+  </footer>
 
-        <section style="text-align:center; margin-top:30px;">
-            <h3>OUR CONTACT INFORMATION</h3>
-            <p>TEL: 070798786</p>
-            <p>ADDRESS: KAMPALA, UGANDA</p>
-            <p>EMAIL: clean_initiative_uganda@gmail.com</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>©️ Copyright of Clean Initiative Uganda</p>
-    </footer>
-    <script src ="scripts.js"></script>
+  <script src="scripts.js" defer></script>
 </body>
 </html>
